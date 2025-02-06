@@ -1,0 +1,176 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #444;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-weight: 600;
+  color: #333;
+}
+
+header {
+  background-color: #7c98b4;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+section {
+  padding: 50px 0;
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section#about {
+  background-color: #eaf6ff;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 15px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #003366;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+}
+
+footer .social-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between icons */
+}
+
+footer .social-links li {
+  display: inline-block;
+}
+
+footer .social-icon {
+  width: 30px; /* Set width for icons */
+  height: 30px; /* Set height for icons */
+  margin-right: 8px; /* Space between the icon and text */
+  vertical-align: middle;
+  object-fit: contain;  /* Prevent stretching of icons */
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center; /* Vertically align text and icon */
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:hover .social-icon {
+  opacity: 0.7; /* Slight opacity change on hover */
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
+
+  footer .social-links {
+    flex-direction: column; /* Stack icons vertically on smaller screens */
+  }
+
+  footer .social-icon {
+    width: 25px; /* Reduce size of icons on smaller screens */
+    height: 25px;
+  }
+}
